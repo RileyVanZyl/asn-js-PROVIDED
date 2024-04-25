@@ -30,7 +30,7 @@ function monToggle() {
         numOfDay++;
     }
 
-    recalculate()
+    recalculate();
 }
 function tuesToggle() {
     if (tuesdayButton.classList.contains("clicked") == true) {
@@ -42,7 +42,7 @@ function tuesToggle() {
         numOfDay++;
     }
 
-    recalculate()
+    recalculate();
 }
 function wedToggle() {
     if (wednesdayButton.classList.contains("clicked") == true) {
@@ -54,7 +54,7 @@ function wedToggle() {
         numOfDay++;
     }
 
-    recalculate()
+    recalculate();
 }
 function thurToggle() {
     if (thursdayButton.classList.contains("clicked") == true) {
@@ -66,7 +66,7 @@ function thurToggle() {
         numOfDay++;
     }
 
-    recalculate()
+    recalculate();
 }
 function friToggle() {
     if (fridayButton.classList.contains("clicked") == true) {
@@ -78,7 +78,7 @@ function friToggle() {
         numOfDay++;
     }
 
-    recalculate()
+    recalculate();
 }
 
 
@@ -95,20 +95,20 @@ function clearDays() {
     thursdayButton.classList.remove("clicked");
     fridayButton.classList.remove("clicked");
     numOfDay = 0;
-    recalculate()
+    recalculate();
 }
 
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
 let halfButton = document.getElementById("half");
-halfButton.addEventListener("click", halfSwap)
+halfButton.addEventListener("click", halfSwap);
 
 function halfSwap() {
     halfButton.classList.add("clicked");
     fullButton.classList.remove("clicked");
     dailyRate = 20;
 
-    recalculate()
+    recalculate();
 }
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
@@ -120,7 +120,7 @@ function fullSwap() {
     halfButton.classList.remove("clicked");
     dailyRate = 35;
 
-    recalculate()
+    recalculate();
 }
 
 /********* calculate *********/
