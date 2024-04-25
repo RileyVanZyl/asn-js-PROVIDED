@@ -90,16 +90,11 @@ clearButton.addEventListener("click", clearDays);
 
 function clearDays() {
     mondayButton.classList.remove("clicked");
-    numOfDay--;
     tuesdayButton.classList.remove("clicked");
-    numOfDay--;
     wednesdayButton.classList.remove("clicked");
-    numOfDay--;
     thursdayButton.classList.remove("clicked");
-    numOfDay--;
     fridayButton.classList.remove("clicked");
-    numOfDay--;
-
+    numOfDay = 0;
     recalculate()
 }
 
