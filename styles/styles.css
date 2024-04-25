@@ -164,7 +164,7 @@ main a + a {
     width: 200px;
 }
 .booking-page li, .booking-page p {
-    resize: 18px;
+    font-size: 18px;
 }
 .day-selector li {
     margin-bottom: 12px;
